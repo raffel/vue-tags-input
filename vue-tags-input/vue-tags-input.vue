@@ -12,9 +12,10 @@
       <component
         :is="isDraggable ? 'draggable' : 'ul'"
         v-if="tagsCopy"
-        v-model="tagsCopy" group="tags"
+        v-model="tagsCopy"
         class="ti-tags"
         tag="ul"
+        :group="group"
         draggable=".item"
         :handle="draggableHandle ? '.handle' : ''"
         ghost-class="ghost-tag"

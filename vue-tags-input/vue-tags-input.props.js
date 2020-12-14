@@ -74,6 +74,10 @@ export default {
     default: () => [],
     validator: propValidatorTag,
   },
+  group: {
+    type: String,
+    default: "",
+  },
   /**
    * @description Expects an array containing objects inside. The objects
     can have the same properties as a tag object.
